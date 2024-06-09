@@ -21,11 +21,12 @@
     "noFallthroughCasesInSwitch": true,
 
     // Shadcn
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@components/*": ["./components/*"],
+      "@routes/*": ["./routes/*"]
     }
   },
-  "include": ["src"],
+  "include": ["vite-env.d.ts", "custom-env.d.ts", "**/*.ts", "**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
